@@ -1,0 +1,33 @@
+{
+    "name": "zelenin/string",
+    "description": "String transformers collection",
+    "keywords": [
+        "string",
+        "slug",
+        "translit",
+        "DDD"
+    ],
+    "homepage": "https://github.com/zelenin/string",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Zelenin",
+            "email": "aleksandr@zelenin.me",
+            "homepage": "http://zelenin.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/zelenin/string/issues",
+        "source": "https://github.com/zelenin/string"
+    },
+    "require": {
+        "php": ">=5.4",
+        "ext-intl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zelenin\\Ddd\\String\\": ""
+        }
+    }
+}
