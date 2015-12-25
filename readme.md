@@ -49,7 +49,7 @@ You may set some options:
 ```php
 $string = 'Jeanne Françoise Julie Adélaïde Récamier';
 $transformers = [
-	new IntlNormalizeTransformer(Normalizer::FORM_D),
+	new IntlNormalizeTransformer(Normalizer::FORM_C),
 	new IntlTransliterateTransformer('Russian-Latin/BGN; Any-Latin; Latin-ASCII; NFD; [:Nonspacing Mark:] Remove; NFKC;'),
 	new UrlifyTransformer('_', false),
 	new TemplateTransformer('{id}-{slug}', ['{id}' => $model->id])
