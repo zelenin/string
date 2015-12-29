@@ -40,7 +40,7 @@ $transformers = [
 	new UrlifyTransformer(),
 	new TemplateTransformer('{id}-{slug}', ['{id}' => $model->id])
 ];
-$transformer = new Transformer($transformers);
+$transformer = new Transformer(new TransformerCollection($transformers));
 $slug = $transformer->transform($string); // '12-jeanne-francoise-julie-adelaide-recamier'
 ```
 
@@ -54,7 +54,7 @@ $transformers = [
 	new UrlifyTransformer('_', false),
 	new TemplateTransformer('{id}-{slug}', ['{id}' => $model->id])
 ];
-$transformer = new Transformer($transformers);
+$transformer = new Transformer(new TransformerCollection($transformers));
 $slug = $transformer->transform($string);
 ```
 
